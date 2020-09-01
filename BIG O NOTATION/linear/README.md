@@ -73,4 +73,4 @@ Eu não to falando pra você ficar contando segundo, isso vai depender do seu ce
 
 Próximo:
 
-![O(n²) - O(n³) Exponencial](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/exponencial)
+[O(n²) - O(n³) Exponencial](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/exponencial)
