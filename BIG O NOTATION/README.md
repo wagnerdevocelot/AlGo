@@ -88,4 +88,4 @@ Vou falar sobre a maior parte dos tipos de complexidade, e pretendo dar maior en
 
 Próximo:
 
-![](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/constante)
+![O(1) constantes](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/constante)
