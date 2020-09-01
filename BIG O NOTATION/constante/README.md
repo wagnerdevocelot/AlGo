@@ -27,4 +27,4 @@ Nesse gráfico fica bem explicito o como uma complexidade constante se comporta,
 
 Próximo:
 
-![O(n) Linear](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/linear)
+[O(n) Linear](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/linear)
