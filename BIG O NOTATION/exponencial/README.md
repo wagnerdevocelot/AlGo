@@ -74,4 +74,4 @@ Agora dá pra ter uma ideia da perspectiva, veja como a linha **vermelha** de um
 
 Não precisa decorar mas é bom saber.
 
-![O(log n Logaritmo)](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/logaritmo)
+[O(log n Logaritmo)](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/logaritmo)
