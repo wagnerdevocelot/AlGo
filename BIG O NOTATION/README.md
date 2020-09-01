@@ -6,7 +6,14 @@
 
 Quando se começa a programar tem um momento durante o aprendizado em que você tem um “_click_” você começa a pensar nos problemas do ponto de vista de um programador. Não tem mais volta, você está fadado ao resto da vida a olhar para um interruptor e pensar:
 
-![](https://cdn-images-1.medium.com/max/800/1*UxujzwySvaU54-rIsCjQtQ.png)
+
+``` go
+    if interruptor == up {
+        turnLightOn()
+    } else {
+        turnLightOff()
+    }
+```
 
 Parece que o cérebro funciona com lógica boleana, só que não, você levou muito tempo para que em determinado momento a sua cabeça se voltasse para as coisas dessa forma, isso é a construção de muito trabalho, ao mesmo tempo parece que foi sim um “_click_”, isso porque não percebemos a nós mesmos com muita clareza.
 
@@ -28,11 +35,34 @@ Digamos que um algoritmo percorre um array de dez posições somando o índice d
 
 A complexidade seria de 10 X T, sendo que T representa o **tempo** necessário para atualizar todos os elementos do array com a operação de soma. Como cada computador pode ser muito diferente um do outro isso varia de acordo com o hardware.
 
-![](https://cdn-images-1.medium.com/max/800/1*I-pCAj-NmNeblsXjvsUycg.png)
+``` go
+package main
+
+import "fmt"
+
+func main() {
+        var arr [10]int
+        for indice := 0; indice < len(arr); indice++{
+            arr[indice] = indice + 200
+            fmt.Printf("indice[%d] = %d\n", indice, arr[indice])
+        }
+}
+```
 
 Output:
 
-![](https://cdn-images-1.medium.com/max/800/1*Py3_GeXeXQFZQhqPoGNRSw.png)
+``` text
+indice[0] = 200
+indice[1] = 201
+indice[2] = 202
+indice[3] = 203
+indice[4] = 204
+indice[5] = 205
+indice[6] = 206
+indice[7] = 207
+indice[8] = 208
+indice[9] = 209
+```
 
 Temos 10 operações acontecendo, aparentemente muito simples.
 
@@ -56,3 +86,6 @@ Então você pode visualizar de forma gráfica como funciona o crescimento de te
 
 Vou falar sobre a maior parte dos tipos de complexidade, e pretendo dar maior enfase na complexidade de tempo, mais tarde assuntos como recursão vão aparecer então vou diluindo isso durante o processo. Você pode estar se perguntando “_ok mas como eu calculo isso?_” como eu descubro qual o tipo de complexidade tem meu algoritmo?  
 
+Próximo:
+
+![](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/constante)
