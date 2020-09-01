@@ -2,7 +2,18 @@
 
 Fazemos isso contando as operações, exemplo:
 
-![](https://cdn-images-1.medium.com/max/800/1*a2CHhTLgveKQb3dhHZICpg.png)
+```go
+package main
+
+func main() {
+
+}
+
+func constante(n int) int {
+	return n * (n + 1) / 2
+}
+```
+
 
 Aqui temos, uma multiplicação, uma adição e uma divisão. três operações.
 
@@ -13,3 +24,7 @@ Geralmente se ignora as constantes em um algoritmo pois o tempo de execução em
 ![](https://cdn-images-1.medium.com/max/800/1*TVLSKfjYYMpMLCdps-z2GA.png)
 
 Nesse gráfico fica bem explicito o como uma complexidade constante se comporta, no eixo **vertical** temos a relação de tempo e **horizontal** a de **N** (input) temos um ultimo input de **10tb** sobre esse algoritmo do exemplo e nessa simulação ele não leva nem um milésimo de execução. Mais a frente olharemos o mesmo gráfico em perspectiva a diferentes complexidades.
+
+Próximo:
+
+![O(n) Linear](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/linear)

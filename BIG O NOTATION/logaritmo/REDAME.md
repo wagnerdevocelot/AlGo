@@ -29,7 +29,36 @@ Então, para uma lista de 8 números, você teria que verificar 3 números no m�
 
 Um exemplo de algoritmo com complexidade _O(log n)_ é uma **busca binária** em uma lista já **ordenada**.
 
-![](https://cdn-images-1.medium.com/max/800/1*waNBhYYYf12mYgd4YReLOA.png)
+```go
+package main
+
+import "fmt"
+
+func main() {
+	arr := []int{2, 3, 4, 10, 40}
+	item := 9
+	busca := buscaBinaria(arr, 0, len(arr), item)
+	fmt.Println(busca)
+}
+
+func buscaBinaria(arr []int, esquerda, direita, item int) bool {
+	for esquerda <= direita {
+		meio := esquerda + (direita-esquerda)/2
+
+		if arr[meio] == item {
+			return true
+		}
+
+		if arr[meio] < item {
+			esquerda = meio + 1
+		} else {
+			direita = meio - 1
+		}
+	}
+	return false
+}
+
+```
 
 Esse tipo de algoritmo é bem simples você parte o **input** ao meio e ai compara pra verificar se o item a ser buscado é **menor** ou **maior** que o item no meio do array. Quando isso acontece você joga fora metade da lista ficando com uma parte menor e esse processo é repetido até que se encontre o item da busca diminuindo cada vez mais o processamento, por isso ele é o inverso do exponencial você diminui o **N** toda vez que um processamento é feito.
 

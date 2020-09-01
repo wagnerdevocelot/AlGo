@@ -10,7 +10,25 @@ Se chegar ao final e conseguir responder essa ultima pergunta, você entendeu Bi
 
 A complexidade linear,_O(n)_, é demonstrada em um algoritmo da seguinte forma:
 
-![](https://cdn-images-1.medium.com/max/800/1*IfM9TvSjMkQAdqKdfcEc8w.png)
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func linear(n int) int {
+	total := 0
+	for i := 1; i <= n; i++ {
+		total++
+	}
+	return total
+}
+
+func main() {
+	fmt.Println(linear(10))
+}
+```
 
 Aqui temos uma operação apenas e não três como anteriormente, nesse caso é **total ++** que é o mesmo que: total é igual a total + 1, porém a complexidade é totalmente diferente pois o **input** também define quantas vezes **i** será incrementado no **for** statement. Então quanto maior for o input_(n)_ maior o numero de operações serão feitas em total.
 
@@ -27,7 +45,21 @@ Quando for analisar a complexidade do algoritmo não é necessário contar todas
 
 E se você tiver dois for statement? Tipo assim:
 
-![](https://cdn-images-1.medium.com/max/800/1*4p0EURVSBp8tcPHDsi8MQQ.png)
+```go
+package main
+
+import "fmt"
+
+func elevador(n) {
+    for i := 0 ; i < n; i++{
+        fmt.Println(i)
+    }
+
+    for j := n - 1 ; j >= 0; j--{
+        fmt.Println(j)
+    }
+}
+```
 
 Ainda assim a complexidade será _O(n)_ e não _O(2n)_ porque Big O é sobre a perspectiva geral.
 
@@ -38,3 +70,7 @@ Pode ser que eu esteja batendo na mesma tecla, porém recomendo que leia mesmo a
 Agora temos em perspectiva dois tipos de complexidade a constante em **cinza** e a linear em **azul** e agora fica muito óbvio o porque do nome. Repare que dessa vez o **input** é de _10gb_ e não _10tb_ se eu tentasse fazer com um input de _10tb_ em um algoritmo de complexidade _O(n)_ levaria muito tempo. A linha de _O(1)_ permanece plana não leva nem 1 segundo de runtime, a azul com um input de _10gb_ já leva 18 segundos.
 
 Eu não to falando pra você ficar contando segundo, isso vai depender do seu cenário, mas se você olhar o quanto as linhas já se distanciaram é bastante e como diz o ditado “de grão em grão a galinha enche o papo”.
+
+Próximo:
+
+![O(n²) - O(n³) Exponencial](https://github.com/wagnerdevocelot/DSA/tree/master/BIG%20O%20NOTATION/exponencial)
