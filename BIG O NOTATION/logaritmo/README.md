@@ -1,6 +1,5 @@
 ## Complexidade Logarítmica O(log n)
 
-  
 Back to school, vamos falar de matemática mas é algo tão simples que nem vai da tempo de você fica chateado.
 
 É necessário entender um pouco sobre **Logaritmos** para entender a próxima notação, basicamente o que você precisa ter em mente é que logaritmos são o inverso de **exponenciais**.
@@ -35,39 +34,38 @@ package main
 import "fmt"
 
 func main() {
-	arr := []int{2, 3, 4, 10, 40}
-	item := 9
-	busca := buscaBinaria(arr, 0, len(arr), item)
-	fmt.Println(busca)
+    arr := []int{2, 3, 4, 10, 40}
+    item := 9
+    busca := buscaBinaria(arr, 0, len(arr), item)
+    fmt.Println(busca)
 }
 
 func buscaBinaria(arr []int, esquerda, direita, item int) bool {
-	for esquerda <= direita {
-		meio := esquerda + (direita-esquerda)/2
+    for esquerda <= direita {
+        meio := esquerda + (direita-esquerda)/2
 
-		if arr[meio] == item {
-			return true
-		}
+        if arr[meio] == item {
+            return true
+        }
 
-		if arr[meio] < item {
-			esquerda = meio + 1
-		} else {
-			direita = meio - 1
-		}
-	}
-	return false
+        if arr[meio] < item {
+            esquerda = meio + 1
+        } else {
+            direita = meio - 1
+        }
+    }
+    return false
 }
-
 ```
 
 Esse tipo de algoritmo é bem simples você parte o **input** ao meio e ai compara pra verificar se o item a ser buscado é **menor** ou **maior** que o item no meio do array. Quando isso acontece você joga fora metade da lista ficando com uma parte menor e esse processo é repetido até que se encontre o item da busca diminuindo cada vez mais o processamento, por isso ele é o inverso do exponencial você diminui o **N** toda vez que um processamento é feito.
 
 ![](https://cdn-images-1.medium.com/max/800/1*-Xht_t2MR_IucrwskZyuzQ.png)
 
-Nesse exemplo do gráfico da pra verificar que o numero varia muito porém o tempo é irrelevante em relação a outras complexidades ali em baixo o **input** é de _1pb_ e o tempo de 3 milésimos. O gŕafico mostra como **N** aumenta e logo em seguida se torna uma constante, isso acontece porque mesmo que **N** duplique o algoritmo sempre vai estar fatiando **N** pela metade várias vezes até encontrar o resultado.
+Nesse exemplo do gráfico da pra verificar que o numero varia muito porém o tempo é irrelevante em relação a outras complexidades ali em baixo o **input** é de _1pb_ e o tempo de 3 milésimos. O gŕafico mostra como **N** aumenta e logo em seguida se torna quase uma constante, isso acontece porque mesmo que **N** duplique o algoritmo sempre vai estar fatiando **N** pela metade várias vezes até encontrar o resultado.
 
 Como um rapaz disse no tweet que em que perguntei sobre log n esses dias “_como você explicaria log n para um Júnior/Sandy_”, ele disse:
 
 Vou deixar aqui o link do Tweet pra quem quiser ver mais sobre Log N pois tiveram diversos pontos de vista sobre e podem ajudar mais pessoas.
 
-Esse exemplo da **busca binária** só funciona quando se tem uma lista **ordenada** caso contrário o algoritmo não conseguiria fazer as comparações de **maior** e **menor** resultando em uma complexidade diferente.
+Esse exemplo da **busca binária** só funciona quando se tem uma lista **ordenada** caso contrário o algoritmo não poderia garantir que o elemento procurado está de fato em uma metade ou outra da lista, sendo necessária outra abordagem.
