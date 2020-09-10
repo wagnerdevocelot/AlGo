@@ -10,16 +10,15 @@ func main() {
 }
 
 func constante(n int) int {
-	return n * (n + 1) / 2
+    return n * (n + 1) / 2
 }
 ```
-
 
 Aqui temos, uma multiplicação, uma adição e uma divisão. três operações.
 
 E ai não importa se **N** é 2 ou 1 bilhão, o numero de operações é o mesmo, três! Essa é uma complexidade de _O(3)_ é um tipo de complexidade constante pois o numero de operações não muda mesmo que o input seja diferente.  
 Só que, em Big O a notação tem regras onde você não precisa ficar somando cada operação, _O(3)_ ou _O(200)_ no final tempo constante é sempre _O(1)_.  
-Geralmente se ignora as constantes em um algoritmo pois o tempo de execução em _O(1)_ em relação as outras complexidades é totalmente irrelevante.
+Geralmente se ignora as constantes em um algoritmo, por que a notação big O se importa com o comportamento do algoritmo à medida que a entrada cresce muito, e não com os detalhes exatos pra todos os tamanhos. Quanto maior a entrada fica, menos importante as constantes vão se tornando. Por isso todo algoritmo com número de operações constante tem tempo de execução em _O(1)_ .
 
 ![](https://cdn-images-1.medium.com/max/800/1*TVLSKfjYYMpMLCdps-z2GA.png)
 
