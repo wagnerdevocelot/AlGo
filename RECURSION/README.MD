@@ -449,3 +449,8 @@ Devs que utilizam o paradigma funcional sempre preferem recursividade ou simples
   
 
 ![](https://cdn-images-1.medium.com/max/800/1*yQZnuUBPwUAeR6O_03h0hw.png)
+
+
+Próximo:
+
+[Resolução de Problemas](https://github.com/wagnerdevocelot/DSA/tree/master/PROBLEM_SOLVING)

@@ -69,3 +69,8 @@ Como um rapaz disse no tweet que em que perguntei sobre log n esses dias “_com
 Vou deixar aqui o link do Tweet pra quem quiser ver mais sobre Log N pois tiveram diversos pontos de vista sobre e podem ajudar mais pessoas.
 
 Esse exemplo da **busca binária** só funciona quando se tem uma lista **ordenada** caso contrário o algoritmo não poderia garantir que o elemento procurado está de fato em uma metade ou outra da lista, sendo necessária outra abordagem.
+
+
+Próximo:
+
+[Recursão](https://github.com/wagnerdevocelot/DSA/tree/master/RECURSION)

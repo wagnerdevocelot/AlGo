@@ -12,6 +12,7 @@ Em uma busca linear nós simplesmente pensamos, ok vamos fazer um for e procurar
 Se pensarmos na lógica é como se indice fosse um carteiro e ele tem que entregar uma carta na casa do pedro e as casas estão dentro do array. 
 E ai o carteiro vai passando de casa em casa
 
+```text
 0- "É aqui que mora o Pedro?"
 "não"
 1- "É aqui que mora o Pedro?"
@@ -23,6 +24,7 @@ E ai o carteiro vai passando de casa em casa
 4- "É aqui que mora o Pedro?"
 "sim"
 "Essa carta é pra você"
+``` 
 
 Bem engraçado, mas é isso que um loop ta fazendo e nós já sabemos disso. A questão é que em certo momento a gente deixa de se preocupar, porque é tão bobo, só que quando aparece um desafio e a gente ta preocupado com alto nível a nossa cabeça meio que da um tilt.
 
@@ -84,7 +86,7 @@ Isso nos ajuda a pensar no código antes mesmo de escrevê-lo e durante essa dec
 
 Agora que já temos um plano e uma linha de raciocinio já vale a pena começar a escrever código. Não dá pra sair escrevendo qualquer coisa e achar que vai resolver na sorte, isso já não funciona nem no dia a dia imagine em uma entrevista onde o tempo é curto.
 
-#### Refatore
+## Refatore
 
 Com o problema resolvido já da pra fazer algumas perguntas, a complexidade ta lega? Eu escolhi bons nomes para as variáveis? Tá legível o negócio? Caso não esteja de uma revisada pra deixar a solução bacana.
 
@@ -252,36 +254,37 @@ comunicação - Durante a analise como nos comunicamos? fazemos perguntas pertin
 O passo a passo através de um problema.
 
 
-1. Quando o entrevistador explicar o desafio, anote os pontos chave para que você consiga interpretar  a sua forma e assim compreender melhor o problema. Mostre como você organiza seu pensamento.
+-  Quando o entrevistador explicar o desafio, anote os pontos chave para que você consiga interpretar  a sua forma e assim compreender melhor o problema. Mostre como você organiza seu pensamento.
 
-2. Tenha total compreensão de quais são os inputs e outputs, se não tiver certeza pergunte.
+-  Tenha total compreensão de quais são os inputs e outputs, se não tiver certeza pergunte.
 
-3. Qual é o valor mais importante do problema? Você tem tempo, espaço e memória, etc. Qual é o objetivo principal?
+- Qual é o valor mais importante do problema? Você tem tempo, espaço e memória, etc. Qual é o objetivo principal?
 
-4. Não faça perguntas demais, pode ser um pouco irritante.
+- Não faça perguntas demais, pode ser um pouco irritante.
 
-5. Comece com a abordagem ingênua / força bruta. Geralmente a primeira solução que vem na cabeça, e fale sobre ela, não precisa necessáriamente escrever a implementação. 
+- Comece com a abordagem ingênua / força bruta. Geralmente a primeira solução que vem na cabeça, e fale sobre ela, não precisa necessáriamente escrever a implementação. 
 
-6. Diga por que essa abordagem não é a melhor (ou seja, O(n^ 2) ou superior, não legível, etc ...)
+- Diga por que essa abordagem não é a melhor (ou seja, O(n^ 2) ou superior, não legível, etc ...)
 
-7. Percorra sua abordagem, comente coisas e veja onde você pode quebrar coisas. Qualquer repetição, gargalos como O (N^ 2) ou trabalho desnecessário? Você usou todas as informações disponíveis? Gargalo é a parte do código com o maior Big O.
+- Percorra sua abordagem, comente coisas e veja onde você pode quebrar coisas. Qualquer repetição, gargalos como O (N^ 2) ou trabalho desnecessário? Você usou todas as informações disponíveis? Gargalo é a parte do código com o maior Big O.
 
-8. Antes de começar a codificar, analise seu código e anote as etapas que você pretende fazer.
+- Antes de começar a codificar, analise seu código e anote as etapas que você pretende fazer.
 
-9. Modularize seu código desde o início. Divida seu código em pedaços pequenos e adicione apenas comentários, se necessário.
+- Modularize seu código desde o início. Divida seu código em pedaços pequenos e adicione apenas comentários, se necessário.
 
-10. Comece realmente a escrever seu código agora. Tenha em mente que quanto mais você se prepara e entende o que você precisa codificar, melhor será o whiteboard. Portanto, nunca comece a codar sem ter certeza de como as coisas vão funcionar. Essa é uma receita para o desastre.
+-  Comece realmente a escrever seu código agora. Tenha em mente que quanto mais você se prepara e entende o que você precisa codificar, melhor será o whiteboard. Portanto, nunca comece a codar sem ter certeza de como as coisas vão funcionar. Essa é uma receita para o desastre.
 
-11. Pense nas verificações de erro e como você pode quebrar esse código. Nunca faça suposições sobre o input. Suponha que as pessoas estão tentando quebrar seu código. Como você o protegerá? Dica: Comente no código, as verificações que deseja fazer ... escreva a função e diga ao entrevistador que você escreveria testes agora para fazer sua função falhar (mas você não precisará realmente escrever os testes caso tenha pouco tempo).
+-  Pense nas verificações de erro e como você pode quebrar esse código. Nunca faça suposições sobre o input. Suponha que as pessoas estão tentando quebrar seu código. Como você o protegerá? Dica: Comente no código, as verificações que deseja fazer ... escreva a função e diga ao entrevistador que você escreveria testes agora para fazer sua função falhar (mas você não precisará realmente escrever os testes caso tenha pouco tempo).
 
-12. Não use nomes ruins/confusos como i e j. Escreva um código legivél.
+- Não use nomes ruins/confusos como i e j. Escreva um código legivél.
 
-13. Teste seu código: verifique se há parâmetros, 0, indefinido, nulo, matrizes massivas, código assíncrono, etc ... Pergunte ao entrevistador se pudermos fazer suposições sobre o código. Você pode fazer a resposta retornar um erro?
+- Teste seu código: verifique se há parâmetros, 0, indefinido, nulo, matrizes massivas, código assíncrono, etc ... Pergunte ao entrevistador se pudermos fazer suposições sobre o código. Você pode fazer a resposta retornar um erro?
 
-14. Se o seu entrevistador estiver satisfeito com a solução, a entrevista geralmente termina aqui.
+- Se o seu entrevistador estiver satisfeito com a solução, a entrevista geralmente termina aqui.
 
 
 Verificação de código:
+```text
 [✅] Funciona
 [✅] Bom uso de estruturas de dados
 [✅] Reutilizar código/não se repetir
@@ -289,6 +292,7 @@ Verificação de código:
 [✅] Menor que O (N^ 2). Queremos evitar loops aninhados, se possível, pois eles são caros.
 [✅] Baixa complexidade de espaço -> Recursão pode causar stackoverflow, a cópia de matrizes grandes pode
 exceder a memória da máquina.
+```
 
 Essas dicas são mais valiosas para entrevistas em empresas como o Google, Amazon, Facebook e etc, pois é mais comum que eles utilizem estrutura de dados e algoritmos como foco da entrevista, no restante das empresas a solução varia de acordo com o segmento. Mas se temos dominio nesse nível é muito provável que consigamos lidar com testes de outras empresas.
 
