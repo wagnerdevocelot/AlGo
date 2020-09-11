@@ -74,7 +74,7 @@ A função de tempo _T(n)_ representa a complexidade do algoritmo onde _T(n) = O
 
 Geralmente a maioria do material relacionado a Big O é formal demais, talvez isso afaste um pouco as pessoas mas com um pouquinho de dedicação a gente consegue enxergar os padrões.
 
-Em Big O Notation as complexidades de tempo linear, logarítmica, cúbica e quadrática são representações de complexidades diferentes de relação entre **T** e **N** em um algoritmo. A Big O Notation também é usada para determinar quanto espaço é consumido pelo algoritmo.
+Em Big O Notation as complexidades de tempo linear, logarítmica, cúbica e quadrática são representações de complexidades diferentes de relação entre **T** e **N** em um algoritmo. A Big O Notation também é usada para, determinar quanto espaço é consumido pelo algoritmo.
 
 Então você pode visualizar de forma gráfica como funciona o crescimento de tempo e de tamanho do **input** e como eles se relacionam. No final é sobre isso, a relação entre um ou mais aspectos da entrada e o tempo de execução do algoritmo. Importante: nem sempre o desempenho do algoritmo é afetado apenas pelo tamanho da entrada. O algoritmo de ordenação *counting sort*, por exemplo, é afetado também pelo maior número na lista.
 
