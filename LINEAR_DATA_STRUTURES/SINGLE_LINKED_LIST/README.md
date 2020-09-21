@@ -136,4 +136,21 @@ Output
 
 A versão em código no repositório não utiliza a os mesmos exemplos com o Monotrilho, os nomes no arquivo original contam com os nomes comuns usados na estrutura de LinkeList.
 
+#### LinkedList vs Arrays
 
+- Um array é a estrutura de dados que contém uma coleção de elementos de dados de tipo semelhante, enquanto a linked list é considerada como uma estrutura de dados não primitiva contém uma coleção de elementos vinculados não ordenados conhecidos como nodes.
+
+- No array, os elementos pertencem a índices, ou seja, se você deseja o quarto elemento, deve escrever o nome da variável com seu índice ou localização dentro do colchete.
+
+- Em uma linked list, porém, você tem que começar do head e ir trabalhando até chegar ao quarto elemento. O acesso a um elemento em um array é rápido, enquanto a linked list leva um tempo linear, portanto, é um pouco mais lento.
+
+- Operações como insert e delete em arrays consomem muito tempo. Por outro lado, o desempenho dessas operações em linked lists é rápido.
+
+- Arrays são de tamanho fixo. Em contraste, as linked lists são dinâmicas e flexíveis e podem expandir e diminuir seu tamanho.
+
+- Em um array, a memória é atribuída durante o tempo de compilação, enquanto uma linked list é alocada em tempo de execução.
+
+- Os elementos são armazenados consecutivamente na memória com arrays, enquanto que são armazenados aleatoriamente em linked lists.
+
+
+Tudo em relação as estruturas terão tradeoff então a aplicação de cada uma vai depender da necessidade do desenvolvedor.
