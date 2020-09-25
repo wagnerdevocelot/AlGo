@@ -1,7 +1,11 @@
 # Doubly Linked List
 
+![](https://cdn-images-1.medium.com/max/800/1*jN7zAXqMC91AzCOgkD17Hg.png)
+
 Em uma Doubly Linked List, (que a partir de agora vou chamar de DLL) todos os nodes têm um ponteiro para o node ao qual estão conectados.
 Isso significa que cada node está conectado a dois nodes, e podemos avançar para o próximo node ou retroceder até o node anterior.
+
+![](https://cdn-images-1.medium.com/max/800/1*kOYbVWYeEnxGz6JQdlxWHg.png)
 
 DLL permitem operações de insert, deleting e, obviamente, de traversing.
 
@@ -9,6 +13,8 @@ E Para fins de manter o exemplo de linhas temos agora o que seria uma representa
 Enquanto que a single linked list representa um monotrilho aqui temos duas ligações.
 
 Quem nunca voltou da paulista mais loco e que o coringa chegou na consolação e se perguntou "o meu é sentido vila madalena ou é sentido vila prudente? E o sentido da vida?"
+
+![](https://cdn-images-1.medium.com/max/800/1*30q1_bNCMOhlEAR5odi4Ng.png)
 
 Listas duplamente ligadas são exatamente iguais a estações de metrô pois através de um Node você pode seguir para o próximo ou para o anterior  pois temos ponteiros nas duas direções.
 
