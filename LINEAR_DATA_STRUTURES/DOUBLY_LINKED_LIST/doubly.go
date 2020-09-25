@@ -29,7 +29,7 @@ func main() {
 		"Sumaré", "Vila Madalena",
 	}
 
-	linhaVerde.AddinicioDaLinha("Vila Prudente")
+	linhaVerde.AddInicioDaLinha("Vila Prudente")
 	for i := range estacoes {
 		linhaVerde.AddEstacaoNoFinalDaLinha(estacoes[i])
 	}
@@ -56,8 +56,8 @@ func (linhaVerde *Metro) EntreDuasEstacoes(anterior, proxima string) *Estacao {
 	return estacaoAtual
 }
 
-//AddinicioDaLinha method
-func (linhaVerde *Metro) AddinicioDaLinha(novaEstacao string) {
+//AddInicioDaLinha method
+func (linhaVerde *Metro) AddInicioDaLinha(novaEstacao string) {
 
 	var estacao = &Estacao{}
 	estacao.nome = novaEstacao

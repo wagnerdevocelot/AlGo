@@ -66,14 +66,14 @@ func (linhaVerde *Metro) EntreDuasEstacoes(anterior string, proxima string) *Est
 }
 ```
 
-Primeiro instanciamos o Node fazemos um for para percorrer os itens do head ao tail enquanto estacao for diferente de nil. Em seguida uma comparação com os parametros anterior e  proxima feitos com o tail e head para reconhecer o node entre eles, sendo que a comparação é feita somente se head e tail forem diferentes de nil.
+Primeiro instanciamos o Node fazemos um for para percorrer os itens do head ao tail enquanto estacao for diferente de nil. Em seguida uma comparação com os parâmetros anterior e proxima feitos com o tail e head para reconhecer o node entre eles, sendo que a comparação é feita somente se head e tail forem diferentes de nil.
 
 ## The AddToHead method
 
-O meteodo AddinicioDaLinha define o head para que possamos seguir construindo mais estacoes assim como fizemos com o monotrilho.
+O método AddInicioDaLinha define o head para que possamos seguir construindo mais estacões assim como fizemos com o monotrilho.
 
 ``` go
-func (linhaVerde *Metro) AddinicioDaLinha(novaEstacao string) {
+func (linhaVerde *Metro) AddInicioDaLinha(novaEstacao string) {
 
 	var estacao = &Estacao{}
 	estacao.nome = novaEstacao
@@ -90,7 +90,7 @@ func (linhaVerde *Metro) AddinicioDaLinha(novaEstacao string) {
 
 ## AddAfter method
 
-Aqui fazemos um insert de um node após outro node que é passado como parâmetro presente na lista, e para saber se o Node está presente reutilizamos o método ProcuraEstacao() que haviamos feito para a Single Linkedlist.
+Aqui fazemos um insert de um node após outro node que é passado como parâmetro presente na lista, e para saber se o Node está presente reutilizamos o método ProcuraEstacao() que havíamos feito para a Single Linkedlist.
 
 ```go
 func (linhaVerde *Metro) AddEstacaoSeguinte(destino string, novaEstacao string) {
@@ -110,7 +110,7 @@ func (linhaVerde *Metro) AddEstacaoSeguinte(destino string, novaEstacao string) 
 	}
 }
 ```
-Fazemos a instância do Node atribuimos o nome usado como parâmetro e setamos o node seguinte como nil para que se mantenha o conceito de tail.
+Fazemos a instância do Node atribuímos o nome usado como parâmetro e setamos o node seguinte como nil para que se mantenha o conceito de tail.
 
 Fazemos a busca e recuperamos a localização do Node de referência como estacaoAtual.
 
