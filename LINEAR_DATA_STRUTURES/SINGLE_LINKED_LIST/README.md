@@ -135,5 +135,3 @@ Output
 ![](https://cdn-images-1.medium.com/max/800/1*naXrVJgxxdgsmzI11ZvXiQ.png)
 
 A versão em código no repositório não utiliza a os mesmos exemplos com o Monotrilho, os nomes no arquivo original contam com os nomes comuns usados na estrutura de LinkeList.
-
-
