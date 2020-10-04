@@ -118,4 +118,3 @@ Uma chamada para o método dequeue, para que o primeiro personagem após realiza
 ```text
 &{[{Saravasti 4} {Athena 4}]}
 ```
-Essa é uma implementação super simples usando slice e pode ser feita utilizando arrays também. Agora que você já tem ideia de como funciona uma fila, lá no repositório do Github tem mais dois arquivos uma queue circula e uma queue implementada com linked lists, como já falei sobre linke dlist e doubly linked lists antes basta entender o conceito de queue que aplicar os dois juntos fica bem simples.
