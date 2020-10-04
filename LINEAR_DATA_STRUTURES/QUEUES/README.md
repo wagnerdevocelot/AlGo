@@ -88,9 +88,9 @@ Fazemos uma iteração para inserir na fila todos os personagens que foram orden
 func main() {
 
 	equipe := []personagem{
-		{"Cloud Strife", 8},
-		{"Barret Wallace", 4},
-		{"Tifa Lockhart", 9},
+		{"Saravasti", 4},
+		{"Athena", 4},
+		{"Argath", 5},
 	}
 
 	var fila *queue = new(queue)
@@ -99,11 +99,12 @@ func main() {
 
 	for i := range equipe {
 		fila.enqueue(equipe[i])
-    }
-    
+	}
+
 	fmt.Println(fila)
 	fila.dequeue()
 	fmt.Println(fila)
+
 }
 ```
 
