@@ -6,8 +6,8 @@ import (
 )
 
 type personagem struct {
-	nome      string
-	movimento int
+	nome string
+	mov  int
 }
 
 type queue struct {
@@ -17,7 +17,7 @@ type queue struct {
 type primeiroDaFila []personagem
 
 func (a primeiroDaFila) Len() int           { return len(a) }
-func (a primeiroDaFila) Less(i, j int) bool { return a[i].movimento > a[j].movimento }
+func (a primeiroDaFila) Less(i, j int) bool { return a[i].mov > a[j].mov }
 func (a primeiroDaFila) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 
 func main() {

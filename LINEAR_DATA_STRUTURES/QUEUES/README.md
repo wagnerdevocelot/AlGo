@@ -27,8 +27,8 @@ Vou dar um exemplo de uma *queue* bem simples, aqui vou definir os dados de pers
 
 ```go
 type personagem struct {
-	nome      string
-	movimento int
+	nome string
+	mov  int
 }
 ```
 ### Queue
@@ -50,7 +50,7 @@ Geralmente eu não gosto de usar parâmetros como (i, j, a, k) mas como esse sor
 type primeiroDaFila []personagem
 
 func (a primeiroDaFila) Len() int           { return len(a) }
-func (a primeiroDaFila) Less(i, j int) bool { return a[i].movimento > a[j].movimento }
+func (a primeiroDaFila) Less(i, j int) bool { return a[i].mov > a[j].mov }
 func (a primeiroDaFila) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 ```
 
